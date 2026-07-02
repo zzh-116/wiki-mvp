@@ -13,10 +13,10 @@ class Settings(BaseSettings):
     milvus_host: str = "localhost"
     milvus_port: int = 19530
 
-    # LLM (OpenAI-compatible)
-    llm_api_base: str = "https://api.openai.com/v1"
+    # LLM (DeepSeek - OpenAI compatible)
+    llm_api_base: str = "https://api.deepseek.com/v1"
     llm_api_key: str = ""
-    llm_model: str = "gpt-4o"
+    llm_model: str = "deepseek-chat"
     llm_temperature: float = 0.1
     llm_max_tokens: int = 2048
 
