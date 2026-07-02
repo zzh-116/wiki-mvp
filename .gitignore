@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+data/uploads/*
+data/chunks/*
+data/*.db
+!data/uploads/.gitkeep
+!data/chunks/.gitkeep
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
