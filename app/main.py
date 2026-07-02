@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from app.api import pages
+from app.api import pages, qa, upload
 from app.core.config import settings
 from app.core.database import init_db
 from app.core.milvus import init_milvus
@@ -28,6 +28,8 @@ app = FastAPI(
 )
 
 app.include_router(pages.router)
+app.include_router(upload.router)
+app.include_router(qa.router)
 
 
 @app.get("/")

@@ -13,6 +13,13 @@ class Settings(BaseSettings):
     milvus_host: str = "localhost"
     milvus_port: int = 19530
 
+    # LLM (OpenAI-compatible)
+    llm_api_base: str = "https://api.openai.com/v1"
+    llm_api_key: str = ""
+    llm_model: str = "gpt-4o"
+    llm_temperature: float = 0.1
+    llm_max_tokens: int = 2048
+
     # Data directory
     data_dir: Path = Path("data")
     upload_dir: Path = data_dir / "uploads"
